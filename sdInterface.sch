@@ -41,7 +41,7 @@ U 1 1 5E2B0489
 P 6150 5100
 F 0 "JP1" H 6150 5231 50  0000 C CNN
 F 1 "Jumper_3_Open" H 6150 5322 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6150 5100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6150 5100 50  0001 C CNN
 F 3 "~" H 6150 5100 50  0001 C CNN
 	1    6150 5100
 	-1   0    0    1   
@@ -79,14 +79,6 @@ Wire Wire Line
 	6000 3200 6850 3200
 Wire Wire Line
 	5500 3550 6100 3550
-Wire Wire Line
-	6100 3550 6100 2500
-Wire Wire Line
-	6100 2500 7850 2500
-Wire Wire Line
-	7850 2500 7850 2900
-Wire Wire Line
-	7850 2900 7350 2900
 Wire Wire Line
 	5500 3450 6200 3450
 Wire Wire Line
@@ -134,4 +126,75 @@ Wire Wire Line
 NoConn ~ 3700 3350
 Text Label 5800 2900 0    50   ~ 0
 GND
+$Comp
+L Regulator_Linear:MCP1826S U1
+U 1 1 5E2BFAF6
+P 5750 2200
+F 0 "U1" H 5750 2442 50  0000 C CNN
+F 1 "MCP1826S" H 5750 2351 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5650 2350 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22057B.pdf" H 5750 2450 50  0001 C CNN
+	1    5750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2500 5750 2550
+Wire Wire Line
+	5750 2900 5800 2900
+Connection ~ 5800 2900
+Wire Wire Line
+	7750 1850 7750 2900
+Wire Wire Line
+	7750 2900 7350 2900
+$Comp
+L Device:C_Small C1
+U 1 1 5E2C5E59
+P 5350 2300
+F 0 "C1" H 5150 2350 50  0000 L CNN
+F 1 "1u" H 5150 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 2300 50  0001 C CNN
+F 3 "~" H 5350 2300 50  0001 C CNN
+	1    5350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5E2C7B61
+P 6150 2300
+F 0 "C2" H 6100 2050 50  0000 L CNN
+F 1 "1u" H 6100 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6150 2300 50  0001 C CNN
+F 3 "~" H 6150 2300 50  0001 C CNN
+	1    6150 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 2200 5350 2200
+Wire Wire Line
+	5350 2400 5350 2550
+Wire Wire Line
+	5350 2550 5750 2550
+Connection ~ 5750 2550
+Wire Wire Line
+	5750 2550 5750 2900
+Wire Wire Line
+	5350 2200 5350 1850
+Wire Wire Line
+	5350 1850 7750 1850
+Connection ~ 5350 2200
+Wire Wire Line
+	6050 2200 6150 2200
+Wire Wire Line
+	6150 2400 6150 2550
+Wire Wire Line
+	6150 2550 5750 2550
+Wire Wire Line
+	6100 2700 6100 3550
+Wire Wire Line
+	6150 2200 6300 2200
+Wire Wire Line
+	6300 2200 6300 2700
+Wire Wire Line
+	6300 2700 6100 2700
+Connection ~ 6150 2200
 $EndSCHEMATC
