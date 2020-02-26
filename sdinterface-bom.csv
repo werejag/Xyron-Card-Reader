@@ -1,6 +1,6 @@
 ﻿QTY,Ref,Part #,Description,Note
 2,"C1, C2",C0805C105K4RAC7210,Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 1uF X7R 0805 10%,
-1,J1,2041021-3,Memory Card Connectors Secure Digit Con to p,
+1,J1,2041021-1,Memory Card Connectors Secure Digit Con to p,
 2,J2,M20-7821246,Headers & Wire Housings 12 PIN SIL VERTICAL SOCKET TIN,"2 required, one for each side"
 1,JP1,61300311121,Headers & Wire Housings WR-PHD 2.54mm Hdr 3P Single Str Gold,
 1,U1,MCP1826S-3302E/DB,LDO Voltage Regulators 1A CMOS LDO Vout 3.3V ETR,
